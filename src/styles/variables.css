@@ -1,0 +1,296 @@
+/* =========================================================
+   Visionaire EduCore
+   Design System — Global Design Tokens
+   Version: 1.1.0
+   ========================================================= */
+
+:root {
+
+  /* =======================================================
+     1. BRAND COLORS
+     ======================================================= */
+
+  --color-primary: #376a64;
+  --color-primary-hover: #2f5b56;
+  --color-primary-active: #284d49;
+  --color-primary-light: #e3efed;
+  --color-primary-subtle: #f0f6f5;
+  --color-primary-border: #b9d1cd;
+  --color-on-primary: #ffffff;
+
+  --color-accent: #9eca86;
+  --color-accent-dark: #6fae5e;
+  --color-accent-light: #eaf5e4;
+  --color-accent-border: #c8dfbc;
+  --color-on-accent: #1f2d2c;
+
+
+  /* =======================================================
+     2. NEUTRAL COLORS
+     ======================================================= */
+
+  --color-white: #ffffff;
+
+  --color-page-bg: #f5f7f6;
+
+  --color-surface: #ffffff;
+  --color-surface-subtle: #f8faf9;
+  --color-surface-muted: #f1f5f3;
+  --color-surface-hover: #f7faf9;
+  --color-surface-active: #edf3f1;
+  --color-surface-disabled: #eef2f1;
+
+  --color-text-primary: #1f2d2c;
+  --color-text-secondary: #52605c;
+  --color-text-muted: #74817d;
+  --color-text-disabled: #9aa5a1;
+  --color-text-placeholder: #8b9793;
+
+  --color-border: #dfe7e4;
+  --color-border-strong: #c9d6d3;
+  --color-border-subtle: #e8eeec;
+
+  --color-divider: #e8eeec;
+
+
+  /* =======================================================
+     3. SEMANTIC COLORS
+     ======================================================= */
+
+  /* Success */
+
+  --color-success: #3f8f68;
+  --color-success-light: #e8f5ee;
+  --color-success-border: #bfe2ce;
+  --color-success-text: #2f7252;
+
+
+  /* Warning */
+
+  --color-warning: #b7812b;
+  --color-warning-light: #fff5df;
+  --color-warning-border: #eed39b;
+  --color-warning-text: #8e641f;
+
+
+  /* Error / Danger */
+
+  --color-error: #c65353;
+  --color-error-light: #fcebea;
+  --color-error-border: #efc2c2;
+  --color-error-text: #a63f3f;
+
+
+  /* Information */
+
+  --color-info: #3978a8;
+  --color-info-light: #eaf3fa;
+  --color-info-border: #c4dced;
+  --color-info-text: #2e638c;
+
+
+  /* =======================================================
+     4. TYPOGRAPHY
+     ======================================================= */
+
+  --font-heading: "Poppins", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", "Fira Code", monospace;
+
+
+  /* Font Sizes */
+
+  --font-size-xs: 12px;
+  --font-size-sm: 13px;
+  --font-size-md: 14px;
+  --font-size-lg: 16px;
+  --font-size-xl: 18px;
+  --font-size-2xl: 20px;
+  --font-size-3xl: 24px;
+  --font-size-4xl: 32px;
+
+  /* Marketing / Landing */
+
+  --font-size-display-sm: 40px;
+  --font-size-display: 48px;
+
+
+  /* Font Weights */
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+
+  /* Line Heights */
+
+  --line-height-tight: 1.2;
+  --line-height-snug: 1.35;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.65;
+
+
+  /* =======================================================
+     5. SPACING SYSTEM
+     ======================================================= */
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-7: 28px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+
+
+  /* =======================================================
+     6. BORDER RADIUS
+     ======================================================= */
+
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-xl: 12px;
+  --radius-2xl: 16px;
+  --radius-pill: 999px;
+
+
+  /* =======================================================
+     7. BORDERS
+     ======================================================= */
+
+  --border-width-thin: 1px;
+  --border-width-medium: 2px;
+
+
+  /* =======================================================
+     8. ELEVATION / SHADOWS
+     ======================================================= */
+
+  --shadow-xs:
+    0 1px 2px rgba(31, 45, 44, 0.04);
+
+  --shadow-sm:
+    0 2px 6px rgba(31, 45, 44, 0.06);
+
+  --shadow-md:
+    0 6px 16px rgba(31, 45, 44, 0.08);
+
+  --shadow-lg:
+    0 12px 28px rgba(31, 45, 44, 0.10);
+
+  --shadow-xl:
+    0 20px 40px rgba(31, 45, 44, 0.12);
+
+
+  /* =======================================================
+     9. COMPONENT HEIGHTS
+     ======================================================= */
+
+  --control-height-sm: 32px;
+  --control-height-md: 40px;
+  --control-height-lg: 48px;
+
+  --button-height-sm: 32px;
+  --button-height-md: 40px;
+  --button-height-lg: 44px;
+
+  --input-height: 40px;
+  --header-height: 64px;
+
+
+  /* =======================================================
+     10. LAYOUT
+     ======================================================= */
+
+  --sidebar-width: 248px;
+  --sidebar-width-collapsed: 72px;
+
+  --content-max-width: 1440px;
+
+  --page-padding-x: 24px;
+  --page-padding-y: 24px;
+
+  --section-gap: 32px;
+  --component-gap: 16px;
+
+
+  /* =======================================================
+     11. Z-INDEX SYSTEM
+     ======================================================= */
+
+  --z-base: 0;
+  --z-dropdown: 1000;
+  --z-sticky: 1100;
+  --z-header: 1200;
+  --z-sidebar: 1300;
+  --z-overlay: 1400;
+  --z-modal: 1500;
+  --z-toast: 1600;
+  --z-tooltip: 1700;
+
+
+  /* =======================================================
+     12. MOTION
+     ======================================================= */
+
+  --duration-fast: 120ms;
+  --duration-normal: 180ms;
+  --duration-slow: 240ms;
+
+  --ease-standard: cubic-bezier(0.2, 0, 0, 1);
+  --ease-emphasized: cubic-bezier(0.2, 0.8, 0.2, 1);
+
+  --transition-fast:
+    color var(--duration-fast) var(--ease-standard),
+    background-color var(--duration-fast) var(--ease-standard),
+    border-color var(--duration-fast) var(--ease-standard);
+
+  --transition-normal:
+    color var(--duration-normal) var(--ease-standard),
+    background-color var(--duration-normal) var(--ease-standard),
+    border-color var(--duration-normal) var(--ease-standard),
+    box-shadow var(--duration-normal) var(--ease-standard),
+    transform var(--duration-normal) var(--ease-standard);
+
+
+  /* =======================================================
+     13. FOCUS
+     ======================================================= */
+
+  --focus-ring-width: 2px;
+  --focus-ring-offset: 2px;
+  --focus-ring-color: rgba(55, 106, 100, 0.28);
+
+
+  /* =======================================================
+     14. OPACITY
+     ======================================================= */
+
+  --opacity-disabled: 0.55;
+  --opacity-muted: 0.72;
+  --opacity-overlay: 0.48;
+
+
+  /* =======================================================
+     15. RESPONSIVE BREAKPOINTS
+     ======================================================= */
+
+  /*
+     Reference values only.
+     Use literal values inside @media queries.
+  */
+
+  --breakpoint-mobile: 480px;
+  --breakpoint-tablet: 768px;
+  --breakpoint-desktop: 1024px;
+  --breakpoint-wide: 1280px;
+  --breakpoint-xl: 1440px;
+
+}

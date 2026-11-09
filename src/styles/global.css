@@ -1,0 +1,378 @@
+@import "tailwindcss";
+@import "./variables.css";
+@import "./layout.css";
+@import "./components.css";
+
+@import "@fontsource/inter/400.css";
+@import "@fontsource/inter/500.css";
+@import "@fontsource/inter/600.css";
+@import "@fontsource/inter/700.css";
+
+@import "@fontsource/poppins/400.css";
+@import "@fontsource/poppins/500.css";
+@import "@fontsource/poppins/600.css";
+@import "@fontsource/poppins/700.css";
+
+
+/* =========================================================
+   VISIONAIRE EDUCORE
+   GLOBAL CSS — FOUNDATION
+   ========================================================= */
+
+
+/* =========================================================
+   1. GLOBAL RESET
+   ========================================================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+
+  background: var(--color-page-bg);
+
+  color-scheme: light;
+
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+
+  margin: 0;
+
+  background: var(--color-page-bg);
+  color: var(--color-text-primary);
+
+  font-family: var(--font-body);
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-normal);
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  text-rendering: optimizeLegibility;
+}
+
+
+/* =========================================================
+   2. ROOT APPLICATION
+   ========================================================= */
+
+#root {
+  min-height: 100vh;
+}
+
+
+/* =========================================================
+   3. FORM FOUNDATION
+   ========================================================= */
+
+button,
+input,
+select,
+textarea {
+  margin: 0;
+
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  border: 0;
+  background: none;
+  padding: 0;
+
+  cursor: pointer;
+}
+
+button:disabled,
+input:disabled,
+select:disabled,
+textarea:disabled {
+  cursor: not-allowed;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+}
+
+textarea {
+  resize: vertical;
+}
+
+select {
+  cursor: pointer;
+}
+
+select:disabled {
+  cursor: not-allowed;
+}
+
+
+/* =========================================================
+   4. FOCUS FOUNDATION
+   ========================================================= */
+
+:focus {
+  outline: none;
+}
+
+:focus-visible {
+  outline:
+    var(--focus-ring-width)
+    solid
+    var(--focus-ring-color);
+
+  outline-offset: var(--focus-ring-offset);
+}
+
+
+/* =========================================================
+   5. LINKS
+   ========================================================= */
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:focus-visible {
+  border-radius: var(--radius-sm);
+}
+
+
+/* =========================================================
+   6. MEDIA
+   ========================================================= */
+
+img,
+svg,
+video,
+canvas {
+  display: block;
+  max-width: 100%;
+}
+
+img {
+  height: auto;
+}
+
+svg {
+  flex-shrink: 0;
+}
+
+
+/* =========================================================
+   7. TEXT SELECTION
+   ========================================================= */
+
+::selection {
+  background: var(--color-primary-light);
+  color: var(--color-primary);
+}
+
+
+/* =========================================================
+   8. SCROLLBAR
+   ========================================================= */
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color:
+    var(--color-border-strong)
+    transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: var(--color-border-strong);
+  border-radius: var(--radius-pill);
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text-muted);
+}
+
+
+/* =========================================================
+   9. TYPOGRAPHY FOUNDATION
+   ========================================================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+
+  font-family: var(--font-heading);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-primary);
+}
+
+h1 {
+  font-size: var(--font-size-4xl);
+  line-height: var(--line-height-tight);
+}
+
+h2 {
+  font-size: var(--font-size-3xl);
+  line-height: var(--line-height-snug);
+}
+
+h3 {
+  font-size: var(--font-size-2xl);
+  line-height: var(--line-height-snug);
+}
+
+h4 {
+  font-size: var(--font-size-xl);
+  line-height: var(--line-height-snug);
+}
+
+h5 {
+  font-size: var(--font-size-lg);
+  line-height: var(--line-height-snug);
+}
+
+h6 {
+  font-size: var(--font-size-md);
+  line-height: var(--line-height-snug);
+}
+
+p {
+  margin: 0;
+}
+
+
+/* =========================================================
+   10. LIST FOUNDATION
+   ========================================================= */
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* =========================================================
+   11. TABLE FOUNDATION
+   ========================================================= */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+/* =========================================================
+   12. CODE FOUNDATION
+   ========================================================= */
+
+code,
+kbd,
+pre,
+samp {
+  font-family: var(--font-mono);
+}
+
+pre {
+  margin: 0;
+}
+
+
+/* =========================================================
+   13. HORIZONTAL RULE
+   ========================================================= */
+
+hr {
+  height: 0;
+
+  margin: 0;
+
+  border: 0;
+  border-top:
+    var(--border-width-thin)
+    solid
+    var(--color-divider);
+}
+
+
+/* =========================================================
+   14. BRAND / LOGO
+   ========================================================= */
+
+.logo-h1 {
+  margin: 0;
+
+  font-family: var(--font-heading);
+  font-size: 26px;
+  font-weight: var(--font-weight-semibold);
+  line-height: 1;
+  letter-spacing: -0.02em;
+
+  color: var(--color-primary);
+}
+
+.logo-small {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-regular);
+  line-height: 1.2;
+  letter-spacing: 0.75px;
+
+  color: var(--color-accent);
+}
+
+
+/* =========================================================
+   15. ACCESSIBILITY
+   ========================================================= */
+
+[aria-disabled="true"] {
+  cursor: not-allowed;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+
+/* =========================================================
+   16. REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

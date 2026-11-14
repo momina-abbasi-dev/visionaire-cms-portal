@@ -149,3 +149,35 @@ It is currently a development project and is not presented as a production-ready
 ## Repository
 
 [GitHub — Visionaire CMS Portal](https://github.com/momina-abbasi-dev/visionaire-cms-portal)
+
+## Screenshots
+
+### Admin Dashboard
+
+**Admin Overview**
+
+![Admin Overview](screenshots/admin-overview.png)
+
+**Academic Structure Management**
+
+![Academic Structure](screenshots/academic-structure.png)
+
+**Admission Management**
+
+![Admission Management](screenshots/admission-management.png)
+
+### Role-Based Dashboards
+
+**Student Attendance Dashboard**
+
+![Student Attendance](screenshots/attendance-student.png)
+
+**Teacher Attendance Dashboard**
+
+![Teacher Attendance](screenshots/attendance-teacher.png)
+
+### Authentication
+
+**Login Page**
+
+![Login Page](screenshots/auth-login-page.png)
